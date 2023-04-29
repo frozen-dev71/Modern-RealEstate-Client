@@ -91,7 +91,7 @@ const Info = () => {
           }}
           viewport={{ once: true, amount: "some" }}
           src={singlePropertie[0].img}
-          alt="propiedad"
+          alt="property"
         />
       </StyledImgWrapper>
     </StyledSection>

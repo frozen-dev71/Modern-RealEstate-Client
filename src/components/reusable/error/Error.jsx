@@ -5,7 +5,7 @@ const Error = () => {
   return (
     <StyledErrorWrapper className="wrapper">
       <StyledH2 className="max-width-700">
-        An error has occurred, please refresh the page
+        An error occurred, please refresh the page
       </StyledH2>
     </StyledErrorWrapper>
   );

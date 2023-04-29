@@ -87,7 +87,7 @@ const Content = () => {
         </motion.div>
       </StyledWrapper>
 
-      <StyledImg src={aboutMainImg} alt="interior casa" />
+      <StyledImg src={aboutMainImg} alt="interior image" />
     </section>
   );
 };

@@ -53,7 +53,7 @@ const PropertiesMap = () => {
             key={propertie.id}
             position={propertie.coordinates}
             icon={icon}
-            alt="icono marcador"
+            alt="icon prop"
           >
             <Popup style={{ fontFamily: "var(--font)" }}>
               {propertie.content}
