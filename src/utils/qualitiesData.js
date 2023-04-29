@@ -1,6 +1,6 @@
-import qualityOneImg from '../assets/images/vision-1.jpg';
-import qualityTwoImg from '../assets/images/vision-2.jpg';
-import qualityThreeImg from '../assets/images/vision-3.jpg';
+import qualityOneImg from '../assets/images/vision-1.jpeg';
+import qualityTwoImg from '../assets/images/vision-2.jpeg';
+import qualityThreeImg from '../assets/images/vision-3.jpeg';
 
 const qualityOne = {
   title: 'Comfort & Aesthetics',

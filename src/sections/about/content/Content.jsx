@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { StyledH1 } from '../../../styles/reusable/typography';
 import { useEntranceContext } from '../../../context/entranceContext';
-import aboutMainImg from '../../../assets/images/about-main.png';
+import aboutMainImg from '../../../assets/images/about-main.jpg';
 import { StyledWrapper, StyledParragraph, StyledSubText, StyledImg } from './styles';
 
 const Content = () => {

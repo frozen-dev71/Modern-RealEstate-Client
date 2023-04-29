@@ -2,9 +2,9 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import Logo from '../../../reusable/logo/Logo';
-import homeImg from '../../../../assets/images/home-menu.png';
-import aboutImg from '../../../../assets/images/about-menu.png';
-import propertiesImg from '../../../../assets/images/properties.jpg';
+import homeImg from '../../../../assets/images/home-menu.jpeg';
+import aboutImg from '../../../../assets/images/about-menu.jpeg';
+import propertiesImg from '../../../../assets/images/properties.png';
 import { StyledDesktopLink } from '../../../../styles/reusable/typography';
 import {
   StyledWrapper,

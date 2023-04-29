@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import styled from 'styled-components';
-import bgImage from '../../assets/images/bg.jpg';
+import bgImage from '../../assets/images/bg.jpeg';
 import { StyledH1 } from '../../styles/reusable/typography';
 import Button from '../../components/reusable/btn/Button';
 import Slider from '../../components/isolated/slider/Slider';
