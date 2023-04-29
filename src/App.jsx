@@ -5,7 +5,7 @@ import useScrollbarSize from 'react-scrollbar-size';
 import Home from './routes/home/Home';
 import About from './routes/about/About';
 import Properties from './routes/properties/Properties';
-import SingleProperty from './routes/singlePropertie/SingleProperty';
+import SingleProperty from './routes/singleProperty/SingleProperty';
 import NotFound from './routes/404/NotFound';
 import GlobalStyles from './styles/globalStyles';
 import ScrollToTop from './components/isolated/scrollToTop/ScrollToTop';
