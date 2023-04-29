@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { StyledBtn, StyledIconWrapper } from './styles';
 
-const HamburguerIcon = ({ isMenuOpen, setIsMenuOpen, light }) => {
+const HamburgerIcon = ({ isMenuOpen, setIsMenuOpen, light }) => {
   return (
     <StyledBtn
       type='button'
@@ -32,4 +32,4 @@ HamburguerIcon.propTypes = {
   light: PropTypes.bool.isRequired,
 };
 
-export default HamburguerIcon;
+export default HamburgerIcon;

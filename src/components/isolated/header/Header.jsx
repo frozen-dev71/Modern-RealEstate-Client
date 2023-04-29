@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
-import HamburguerIcon from './hamburguerIcon/HamburguerIcon';
+import HamburgerIcon from './hamburgerIcon/HamburgerIcon';
 import MobileMenu from './mobileMenu/MobileMenu';
 import DesktopMenu from './desktopMenu/DesktopMenu';
 import Logo from '../../reusable/logo/Logo';
@@ -42,8 +42,8 @@ const Header = ({ light }) => {
           <Logo type={isTextWhite ? 'light' : 'dark'} />
         </div>
 
-        <div className='hamburguer'>
-          <HamburguerIcon
+        <div className='hamburger'>
+          <HamburgerIcon
             isMenuOpen={isMenuOpen}
             setIsMenuOpen={setIsMenuOpen}
             light={isTextWhite}

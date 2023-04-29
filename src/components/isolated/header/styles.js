@@ -27,7 +27,7 @@ const StyledWrapper = styled.div`
   align-items: center;
   justify-content: space-between;
 
-  .hamburguer {
+  .hamburger {
     z-index: 20;
   }
 
@@ -55,7 +55,7 @@ const StyledWrapper = styled.div`
   ${respondTo.lg`
       display: grid;
       grid-template-columns: repeat(3 , max-content) 1fr repeat(4, max-content); 
-      grid-template-areas: 'hamburguer logo pathname . properties facebook mail contact';
+      grid-template-areas: 'hamburger logo pathname . properties facebook mail contact';
       align-items: center;
 
       .logo {
@@ -63,8 +63,8 @@ const StyledWrapper = styled.div`
         margin: 0 1rem 0 3.75rem; //  3.75rem = 60px
       }
 
-      .hamburguer {
-        grid-area: hamburguer;
+      .hamburger {
+        grid-area: hamburger;
       }
 
       .pathname {
