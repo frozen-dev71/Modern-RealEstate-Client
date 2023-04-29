@@ -1,8 +1,8 @@
-import styled from 'styled-components';
-import { motion } from 'framer-motion';
-import { FaFacebookF } from 'react-icons/fa';
-import { FiMail } from 'react-icons/fi';
-import { respondTo } from '../../../styles/helpers';
+import styled from "styled-components";
+import { motion } from "framer-motion";
+import { FaFacebookF } from "react-icons/fa";
+import { FiMail } from "react-icons/fi";
+import { respondTo } from "../../../styles/helpers";
 
 const StyledHeader = styled(motion.header)`
   position: fixed;
@@ -13,7 +13,8 @@ const StyledHeader = styled(motion.header)`
   padding-top: 1.5rem;
   padding-bottom: 0.5rem;
   padding-right: var(--scrollbar-width);
-  background-color: ${props => (props.bgTransparent ? 'transparent' : 'var(--clr-light)')};
+  background-color: ${(props) =>
+    props.bgTransparent ? "transparent" : "var(--clr-light)"};
   transition: box-shadow 0.3s ease-out;
 
   ${respondTo.lg`
@@ -120,4 +121,10 @@ const StyledBg = styled(motion.div)`
   background-color: var(--clr-light);
 `;
 
-export { StyledHeader, StyledWrapper, StyledFacebookIcon, StyledMailIcon, StyledBg };
+export {
+  StyledHeader,
+  StyledWrapper,
+  StyledFacebookIcon,
+  StyledMailIcon,
+  StyledBg,
+};

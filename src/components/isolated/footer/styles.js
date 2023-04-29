@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { respondTo } from '../../../styles/helpers';
+import styled from "styled-components";
+import { respondTo } from "../../../styles/helpers";
 
 const StyledGrid = styled.div`
   ${respondTo.xl`
@@ -22,7 +22,7 @@ const StyledContent = styled.div`
         margin-top: 1rem; 
     }
 
-    grid-area: ${props => props.gridArea};
+    grid-area: ${(props) => props.gridArea};
   `}
 `;
 
@@ -32,7 +32,7 @@ const StyledFlexWrapper = styled.div`
     align-items: center;
     justify-content: space-between;
     padding-top: 8.5rem;
-    grid-area: ${props => props.gridArea};
+    grid-area: ${(props) => props.gridArea};
   `}
 `;
 

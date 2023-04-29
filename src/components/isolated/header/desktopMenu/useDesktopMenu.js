@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import { useAnimation } from 'framer-motion';
+import { useState } from "react";
+import { useAnimation } from "framer-motion";
 
 export const useDesktopMenu = () => {
   const [currentImg, setCurrentImg] = useState(null);
@@ -8,11 +8,11 @@ export const useDesktopMenu = () => {
   const propertiesLinkControls = useAnimation();
 
   const propertiesLinks = [
-    { content: 'Moderne I', id: 1 },
-    { content: 'Moderne II', id: 2 },
-    { content: 'Moderne III', id: 3 },
-    { content: 'Moderne IV', id: 4 },
-    { content: 'Moderne V', id: 5 },
+    { content: "Moderne I", id: 1 },
+    { content: "Moderne II", id: 2 },
+    { content: "Moderne III", id: 3 },
+    { content: "Moderne IV", id: 4 },
+    { content: "Moderne V", id: 5 },
   ];
 
   // Animations
@@ -22,18 +22,28 @@ export const useDesktopMenu = () => {
     transition: {
       ease,
       duration: 0.2,
-      type: 'tween',
+      type: "tween",
     },
   });
 
   const styledWrapperAnim = {
-    to: value => ({
+    to: (value) => ({
       y: value,
-      transition: { type: 'spring', bounce: 0, ease: 'easeInOut', duration: 0.6 },
+      transition: {
+        type: "spring",
+        bounce: 0,
+        ease: "easeInOut",
+        duration: 0.6,
+      },
     }),
-    exit: value => ({
+    exit: (value) => ({
       y: value,
-      transition: { type: 'spring', bounce: 0, ease: 'easeInOut', duration: 0.6 },
+      transition: {
+        type: "spring",
+        bounce: 0,
+        ease: "easeInOut",
+        duration: 0.6,
+      },
     }),
   };
 
@@ -42,14 +52,18 @@ export const useDesktopMenu = () => {
     // Make image visible
     setCurrentImg(imgIndex);
 
-    await controls.start(animateText('rgba(255,255,255, 0)', '#ffff', 'easeIn'));
+    await controls.start(
+      animateText("rgba(255,255,255, 0)", "#ffff", "easeIn")
+    );
   };
 
-  const handleMouseLeave = async controls => {
+  const handleMouseLeave = async (controls) => {
     // Hide image
     setCurrentImg(null);
 
-    await controls.start(animateText('#ffff', 'rgba(255,255,255, 0)', 'easeOut'));
+    await controls.start(
+      animateText("#ffff", "rgba(255,255,255, 0)", "easeOut")
+    );
   };
 
   return [

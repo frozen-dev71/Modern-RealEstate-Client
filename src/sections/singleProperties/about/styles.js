@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { respondTo } from '../../../styles/helpers';
+import styled from "styled-components";
+import { respondTo } from "../../../styles/helpers";
 
 export const StyledSection = styled.section`
   ${respondTo.xl`

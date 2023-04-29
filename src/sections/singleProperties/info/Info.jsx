@@ -1,17 +1,17 @@
-import { motion } from 'framer-motion';
-import Error from '../../../components/reusable/error/Error';
-import InfoSkeleton from './infoSkeleton/InfoSkeleton';
-import { useSinglePropertie } from '../../../api/useSinglePropertie';
-import { useEntranceContext } from '../../../context/entranceContext';
+import { motion } from "framer-motion";
+import Error from "../../../components/reusable/error/Error";
+import InfoSkeleton from "./infoSkeleton/InfoSkeleton";
+import { useSinglePropertie } from "../../../api/useSinglePropertie";
+import { useEntranceContext } from "../../../context/entranceContext";
 import {
   StyledSection,
   StyledTitleWrapper,
   StyledFlexWrapper,
   StyledBox,
   StyledImgWrapper,
-} from './styles';
-import { StyledH1, StyledInfo } from '../../../styles/reusable/typography';
-import { textAnimations, boxWrapperAnimations } from './animations';
+} from "./styles";
+import { StyledH1, StyledInfo } from "../../../styles/reusable/typography";
+import { textAnimations, boxWrapperAnimations } from "./animations";
 
 const Info = () => {
   const { isLoading, error, singlePropertie } = useSinglePropertie();
@@ -31,8 +31,8 @@ const Info = () => {
 
   return (
     <StyledSection>
-      <StyledTitleWrapper className='wrapper'>
-        <motion.div initial={{ overflow: 'hidden' }}>
+      <StyledTitleWrapper className="wrapper">
+        <motion.div initial={{ overflow: "hidden" }}>
           <StyledH1
             initial={textAnimations.from}
             animate={() => textAnimations.to(isEntranceActive, 4.4)}
@@ -41,7 +41,7 @@ const Info = () => {
           </StyledH1>
         </motion.div>
 
-        <motion.div initial={{ overflow: 'hidden' }}>
+        <motion.div initial={{ overflow: "hidden" }}>
           <StyledInfo
             initial={textAnimations.from}
             animate={() => textAnimations.to(isEntranceActive, 4.5)}
@@ -51,11 +51,11 @@ const Info = () => {
         </motion.div>
       </StyledTitleWrapper>
 
-      <motion.div initial={{ overflow: 'hidden' }}>
+      <motion.div initial={{ overflow: "hidden" }}>
         <StyledFlexWrapper
           initial={() => boxWrapperAnimations.from(window.innerWidth)}
           animate={() => boxWrapperAnimations.to(isEntranceActive, 5)}
-          className='wrapper flow-spacing-content rm-spacing-xl'
+          className="wrapper flow-spacing-content rm-spacing-xl"
         >
           <StyledBox>
             <p>Direction</p>
@@ -85,13 +85,13 @@ const Info = () => {
             opacity: 1,
             transition: {
               duration: 0.7,
-              ease: 'easeOut',
-              type: 'tween',
+              ease: "easeOut",
+              type: "tween",
             },
           }}
-          viewport={{ once: true, amount: 'some' }}
+          viewport={{ once: true, amount: "some" }}
           src={singlePropertie[0].img}
-          alt='propiedad'
+          alt="propiedad"
         />
       </StyledImgWrapper>
     </StyledSection>

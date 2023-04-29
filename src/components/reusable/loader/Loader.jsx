@@ -1,10 +1,10 @@
-import styled from 'styled-components';
-import { respondTo } from '../../../styles/helpers';
+import styled from "styled-components";
+import { respondTo } from "../../../styles/helpers";
 
 const Loader = () => {
   return (
     <StyledLoader>
-      <span className='loader' />
+      <span className="loader" />
     </StyledLoader>
   );
 };

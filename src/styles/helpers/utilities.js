@@ -1,5 +1,5 @@
-import { css } from 'styled-components';
-import { respondTo, breakpoints } from './media';
+import { css } from "styled-components";
+import { respondTo, breakpoints } from "./media";
 
 export const utilityClasses = css`
   //--------- Spacing ---------//

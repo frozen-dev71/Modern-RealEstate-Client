@@ -1,15 +1,15 @@
-import { useEffect, useState, useRef } from 'react';
-import { useDebounce } from 'use-debounce';
-import { useLocation, useParams } from 'react-router-dom';
-import { useAnimation } from 'framer-motion';
-import { useWindowDimensions } from '../../../hooks/useWindowDimensions';
+import { useEffect, useState, useRef } from "react";
+import { useDebounce } from "use-debounce";
+import { useLocation, useParams } from "react-router-dom";
+import { useAnimation } from "framer-motion";
+import { useWindowDimensions } from "../../../hooks/useWindowDimensions";
 
-export const useHeader = light => {
+export const useHeader = (light) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isTextWhite, setIsTextWhite] = useState(light);
   const [isBoxShadowActive, setIsBoxShadowActive] = useState(false);
   const [prevYPos, setPrevYPos] = useState(null);
-  const [renderPathName, setRenderPathName] = useState('');
+  const [renderPathName, setRenderPathName] = useState("");
   const headerRef = useRef(null);
 
   const { width } = useWindowDimensions();
@@ -43,7 +43,7 @@ export const useHeader = light => {
           },
         });
 
-        if (pathname === '/') {
+        if (pathname === "/") {
           bgControls.start({
             y: 0,
             transition: {
@@ -68,7 +68,7 @@ export const useHeader = light => {
           },
         });
 
-        if (pathname === '/') {
+        if (pathname === "/") {
           bgControls.start({
             y: -headerHeight,
             transition: {
@@ -90,7 +90,7 @@ export const useHeader = light => {
           },
         });
 
-        if (pathname === '/') {
+        if (pathname === "/") {
           bgControls.start({
             y: -headerHeight,
             transition: {
@@ -110,29 +110,29 @@ export const useHeader = light => {
     };
 
     // add event
-    window.addEventListener('scroll', handleScrollAnim, false);
+    window.addEventListener("scroll", handleScrollAnim, false);
 
     // clean event
-    return () => window.removeEventListener('scroll', handleScrollAnim, false);
+    return () => window.removeEventListener("scroll", handleScrollAnim, false);
 
     // eslint-disable-next-line
   }, [debouncePrevYPos]);
 
   // Delay path
   useEffect(() => {
-    const formatPath = pathStr => {
-      const pathWithoutDashes = pathStr.replace(/-/g, ' ');
+    const formatPath = (pathStr) => {
+      const pathWithoutDashes = pathStr.replace(/-/g, " ");
       const pathWithoutBar = pathWithoutDashes.slice(1);
 
       // Error route
-      if (key === 'default' && pathWithoutBar !== '') {
-        setRenderPathName('Error');
+      if (key === "default" && pathWithoutBar !== "") {
+        setRenderPathName("Error");
         return;
       }
 
       // Home route
-      if (pathWithoutBar === '') {
-        setRenderPathName('Home');
+      if (pathWithoutBar === "") {
+        setRenderPathName("Home");
         return;
       }
 
@@ -143,9 +143,9 @@ export const useHeader = light => {
       }
 
       const formatedPath = pathWithoutBar
-        .split(' ')
-        .map(word => word.charAt(0).toUpperCase() + word.slice(1))
-        .join(' ');
+        .split(" ")
+        .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+        .join(" ");
 
       setRenderPathName(formatedPath);
     };

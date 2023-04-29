@@ -1,7 +1,11 @@
-import { NavLink, useLocation } from 'react-router-dom';
-import { StyledFixedWrapper, StyledNav, StyledLi } from './styles';
-import { fixedWrapperAnimations, navAnimations, liAnimations } from './animations';
-import { removeScrollbar } from '../../../../utils/utilities';
+import { NavLink, useLocation } from "react-router-dom";
+import { StyledFixedWrapper, StyledNav, StyledLi } from "./styles";
+import {
+  fixedWrapperAnimations,
+  navAnimations,
+  liAnimations,
+} from "./animations";
+import { removeScrollbar } from "../../../../utils/utilities";
 
 const MobileMenu = () => {
   const location = useLocation();
@@ -11,16 +15,18 @@ const MobileMenu = () => {
       initial={fixedWrapperAnimations.from}
       animate={fixedWrapperAnimations.to}
       exit={fixedWrapperAnimations.out}
-      key='mobile-menu'
+      key="mobile-menu"
       onAnimationStart={removeScrollbar}
     >
-      <StyledNav className='wrapper' variants={navAnimations} animate='to'>
+      <StyledNav className="wrapper" variants={navAnimations} animate="to">
         <StyledLi initial={liAnimations.from} variants={liAnimations}>
           <NavLink
-            className={linkRoute =>
-              linkRoute.isActive && !location.hash ? 'mobile-link active-link' : 'mobile-link'
+            className={(linkRoute) =>
+              linkRoute.isActive && !location.hash
+                ? "mobile-link active-link"
+                : "mobile-link"
             }
-            to='/'
+            to="/"
           >
             Home
           </NavLink>
@@ -28,10 +34,12 @@ const MobileMenu = () => {
 
         <StyledLi initial={liAnimations.from} variants={liAnimations}>
           <NavLink
-            className={linkRoute =>
-              linkRoute.isActive && !location.hash ? 'mobile-link active-link' : 'mobile-link'
+            className={(linkRoute) =>
+              linkRoute.isActive && !location.hash
+                ? "mobile-link active-link"
+                : "mobile-link"
             }
-            to='/about'
+            to="/about"
           >
             About Moderne
           </NavLink>
@@ -39,10 +47,12 @@ const MobileMenu = () => {
 
         <StyledLi initial={liAnimations.from} variants={liAnimations}>
           <NavLink
-            className={linkRoute =>
-              linkRoute.isActive && !location.hash ? 'mobile-link active-link' : 'mobile-link'
+            className={(linkRoute) =>
+              linkRoute.isActive && !location.hash
+                ? "mobile-link active-link"
+                : "mobile-link"
             }
-            to='/properties'
+            to="/properties"
           >
             Properties
           </NavLink>

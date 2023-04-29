@@ -1,4 +1,8 @@
-import { UPDATE_FILTER, FILL_PROPERTIES_ARRAY, FILTER_PROPERTIES_ARRAY } from './types';
+import {
+  UPDATE_FILTER,
+  FILL_PROPERTIES_ARRAY,
+  FILTER_PROPERTIES_ARRAY,
+} from "./types";
 
 /* eslint-disable consistent-return */
 export function filterReducer(state, action) {
@@ -21,7 +25,7 @@ export function filterReducer(state, action) {
     const { propertiesArr, currentFilter } = state;
     let tempPropertiesArr = propertiesArr;
 
-    if (currentFilter === 'all') {
+    if (currentFilter === "all") {
       return {
         ...state,
         filterArr: propertiesArr,
@@ -29,7 +33,9 @@ export function filterReducer(state, action) {
     }
 
     // Filter array
-    tempPropertiesArr = tempPropertiesArr.filter(propertie => propertie.status === currentFilter);
+    tempPropertiesArr = tempPropertiesArr.filter(
+      (propertie) => propertie.status === currentFilter
+    );
 
     return {
       ...state,

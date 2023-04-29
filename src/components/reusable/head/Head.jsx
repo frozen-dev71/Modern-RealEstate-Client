@@ -1,11 +1,11 @@
-import PropTypes from 'prop-types';
-import { Helmet } from 'react-helmet-async';
+import PropTypes from "prop-types";
+import { Helmet } from "react-helmet-async";
 
 const Head = ({ title, description }) => {
   return (
     <Helmet>
       <title>Moderne | {title}</title>
-      <meta name='description' content={description} />
+      <meta name="description" content={description} />
     </Helmet>
   );
 };

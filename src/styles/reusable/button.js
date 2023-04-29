@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { respondTo } from '../helpers';
+import styled from "styled-components";
+import { respondTo } from "../helpers";
 
 export const StyledScrollButton = styled.button`
   display: none;
@@ -10,7 +10,8 @@ export const StyledScrollButton = styled.button`
     position: relative;
     display: inline-block;
     font-size: var(--fs-text-large);
-    color: ${props => (props.color === 'white' ? 'var(--clr-light)' : 'var(--clr-dark)')};
+    color: ${(props) =>
+      props.color === "white" ? "var(--clr-light)" : "var(--clr-dark)"};
 
     &:hover {
       cursor: pointer;
@@ -23,8 +24,8 @@ export const StyledScrollButton = styled.button`
       height: 1px;
       bottom: 0;
       left: 0;
-      background-color: ${props =>
-        props.color === 'white' ? 'var(--clr-light)' : 'var(--clr-dark)'};
+      background-color: ${(props) =>
+        props.color === "white" ? "var(--clr-light)" : "var(--clr-dark)"};
       transform: scaleX(0);
       transform-origin: bottom right;
       transition: transform 0.25s ease-out;

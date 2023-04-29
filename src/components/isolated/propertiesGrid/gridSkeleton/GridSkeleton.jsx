@@ -1,58 +1,58 @@
-import styled from 'styled-components';
-import PlaceholderLoading from 'react-placeholder-loading';
-import { StyledGrid } from '../styles';
-import { fluidValues, respondTo } from '../../../../styles/helpers';
+import styled from "styled-components";
+import PlaceholderLoading from "react-placeholder-loading";
+import { StyledGrid } from "../styles";
+import { fluidValues, respondTo } from "../../../../styles/helpers";
 
 const GridSkeleton = () => {
   return (
-    <StyledGrid className='wrapper'>
+    <StyledGrid className="wrapper">
       <StyledSkeletonWrapper>
-        <PlaceholderLoading shape='rect' width='100%' height='100%' />
+        <PlaceholderLoading shape="rect" width="100%" height="100%" />
 
         <StyledSkeletonLines>
-          <PlaceholderLoading shape='rect' width='100%' height='10px' />
-          <PlaceholderLoading shape='rect' width='100%' height='10px' />
-          <PlaceholderLoading shape='rect' width='100%' height='10px' />
+          <PlaceholderLoading shape="rect" width="100%" height="10px" />
+          <PlaceholderLoading shape="rect" width="100%" height="10px" />
+          <PlaceholderLoading shape="rect" width="100%" height="10px" />
         </StyledSkeletonLines>
       </StyledSkeletonWrapper>
 
       <StyledSkeletonWrapper>
-        <PlaceholderLoading shape='rect' width='100%' height='100%' />
+        <PlaceholderLoading shape="rect" width="100%" height="100%" />
 
         <StyledSkeletonLines>
-          <PlaceholderLoading shape='rect' width='100%' height='10px' />
-          <PlaceholderLoading shape='rect' width='100%' height='10px' />
-          <PlaceholderLoading shape='rect' width='100%' height='10px' />
+          <PlaceholderLoading shape="rect" width="100%" height="10px" />
+          <PlaceholderLoading shape="rect" width="100%" height="10px" />
+          <PlaceholderLoading shape="rect" width="100%" height="10px" />
         </StyledSkeletonLines>
       </StyledSkeletonWrapper>
 
       <StyledSkeletonWrapper>
-        <PlaceholderLoading shape='rect' width='100%' height='100%' />
+        <PlaceholderLoading shape="rect" width="100%" height="100%" />
 
         <StyledSkeletonLines>
-          <PlaceholderLoading shape='rect' width='100%' height='10px' />
-          <PlaceholderLoading shape='rect' width='100%' height='10px' />
-          <PlaceholderLoading shape='rect' width='100%' height='10px' />
+          <PlaceholderLoading shape="rect" width="100%" height="10px" />
+          <PlaceholderLoading shape="rect" width="100%" height="10px" />
+          <PlaceholderLoading shape="rect" width="100%" height="10px" />
         </StyledSkeletonLines>
       </StyledSkeletonWrapper>
 
       <StyledSkeletonWrapper>
-        <PlaceholderLoading shape='rect' width='100%' height='100%' />
+        <PlaceholderLoading shape="rect" width="100%" height="100%" />
 
         <StyledSkeletonLines>
-          <PlaceholderLoading shape='rect' width='100%' height='10px' />
-          <PlaceholderLoading shape='rect' width='100%' height='10px' />
-          <PlaceholderLoading shape='rect' width='100%' height='10px' />
+          <PlaceholderLoading shape="rect" width="100%" height="10px" />
+          <PlaceholderLoading shape="rect" width="100%" height="10px" />
+          <PlaceholderLoading shape="rect" width="100%" height="10px" />
         </StyledSkeletonLines>
       </StyledSkeletonWrapper>
 
       <StyledSkeletonWrapper>
-        <PlaceholderLoading shape='rect' width='100%' height='100%' />
+        <PlaceholderLoading shape="rect" width="100%" height="100%" />
 
         <StyledSkeletonLines>
-          <PlaceholderLoading shape='rect' width='100%' height='10px' />
-          <PlaceholderLoading shape='rect' width='100%' height='10px' />
-          <PlaceholderLoading shape='rect' width='100%' height='10px' />
+          <PlaceholderLoading shape="rect" width="100%" height="10px" />
+          <PlaceholderLoading shape="rect" width="100%" height="10px" />
+          <PlaceholderLoading shape="rect" width="100%" height="10px" />
         </StyledSkeletonLines>
       </StyledSkeletonWrapper>
     </StyledGrid>

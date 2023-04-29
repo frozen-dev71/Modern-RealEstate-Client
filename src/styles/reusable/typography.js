@@ -1,23 +1,23 @@
-import styled from 'styled-components';
-import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
-import { fluidValues } from '../helpers';
+import styled from "styled-components";
+import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
+import { fluidValues } from "../helpers";
 
 const StyledH1 = styled(motion.h1)`
   font-size: var(--fs-1);
   font-weight: 600;
-  color: ${props => (props.light ? 'var(--clr-light)' : 'var(--clr-dark)')};
+  color: ${(props) => (props.light ? "var(--clr-light)" : "var(--clr-dark)")};
 `;
 
 const StyledH2 = styled(motion.h2)`
   font-size: var(--fs-2);
-  font-weight: ${props => (props.regular ? '400' : '600')};
-  color: ${props => (props.light ? 'var(--clr-light)' : 'var(--clr-dark)')};
+  font-weight: ${(props) => (props.regular ? "400" : "600")};
+  color: ${(props) => (props.light ? "var(--clr-light)" : "var(--clr-dark)")};
 `;
 
 const StyledH3 = styled.h3`
   font-size: var(--fs-3);
-  font-weight: ${props => (props.regular ? '400' : '600')};
+  font-weight: ${(props) => (props.regular ? "400" : "600")};
 `;
 
 const StyledInfo = styled(motion.span)`
@@ -46,4 +46,12 @@ const StyledDesktopLink = styled(Link)`
   user-select: none;
 `;
 
-export { StyledH1, StyledH2, StyledH3, StyledError, StyledInfo, StyledBoxText, StyledDesktopLink };
+export {
+  StyledH1,
+  StyledH2,
+  StyledH3,
+  StyledError,
+  StyledInfo,
+  StyledBoxText,
+  StyledDesktopLink,
+};

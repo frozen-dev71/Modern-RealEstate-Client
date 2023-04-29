@@ -1,5 +1,5 @@
-import { css } from 'styled-components';
-import { breakpoints } from './media';
+import { css } from "styled-components";
+import { breakpoints } from "./media";
 
 // Styles required by external libraries
 export const thirdPartyStyles = css`

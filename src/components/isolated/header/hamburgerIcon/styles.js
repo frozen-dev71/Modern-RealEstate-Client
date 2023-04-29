@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const StyledBtn = styled.button`
   display: grid;
@@ -18,7 +18,8 @@ const StyledIconWrapper = styled.div`
 
   .line {
     fill: none;
-    stroke: ${props => (props.isLight ? 'var(--clr-light)' : 'var(--clr-dark)')};
+    stroke: ${(props) =>
+      props.isLight ? "var(--clr-light)" : "var(--clr-dark)"};
     stroke-width: 3;
     stroke-linecap: round;
     transition: stroke-dasharray 0.9s cubic-bezier(0.4, 0, 0.2, 1),

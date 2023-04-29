@@ -1,10 +1,10 @@
-import { useLayoutEffect } from 'react';
-import { AnimatePresence } from 'framer-motion';
-import Entrance from './entrance/Entrance';
-import TransitionMount from './transitionMount/TransitionMount';
-import TransitionUnmount from './transitionUnmount/TransitionUnmount';
-import { useEntranceContext } from '../../../context/entranceContext';
-import { removeScrollbar, addScrollbar } from '../../../utils/utilities';
+import { useLayoutEffect } from "react";
+import { AnimatePresence } from "framer-motion";
+import Entrance from "./entrance/Entrance";
+import TransitionMount from "./transitionMount/TransitionMount";
+import TransitionUnmount from "./transitionUnmount/TransitionUnmount";
+import { useEntranceContext } from "../../../context/entranceContext";
+import { removeScrollbar, addScrollbar } from "../../../utils/utilities";
 
 const Animations = () => {
   const { isEntranceActive } = useEntranceContext();

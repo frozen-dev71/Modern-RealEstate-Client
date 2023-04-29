@@ -1,15 +1,15 @@
-import styled from 'styled-components';
-import Button from '../../components/reusable/btn/Button';
-import { StyledError, StyledH3 } from '../../styles/reusable/typography';
+import styled from "styled-components";
+import Button from "../../components/reusable/btn/Button";
+import { StyledError, StyledH3 } from "../../styles/reusable/typography";
 
 const Content = () => {
   return (
-    <StyledSection className='wrapper spacing-top'>
+    <StyledSection className="wrapper spacing-top">
       <StyledError>404</StyledError>
       <StyledH3>An error has occurred...</StyledH3>
 
-      <div className='adjust-button-pos'>
-        <Button path='/' text='Back to HomePage' />
+      <div className="adjust-button-pos">
+        <Button path="/" text="Back to HomePage" />
       </div>
     </StyledSection>
   );

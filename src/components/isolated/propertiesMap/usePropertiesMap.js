@@ -1,7 +1,7 @@
-import { useEffect, useState } from 'react';
-import { useAnimation } from 'framer-motion';
-import { usePropertiesData } from '../../../api/usePropertiesData';
-import { useWindowDimensions } from '../../../hooks/useWindowDimensions';
+import { useEffect, useState } from "react";
+import { useAnimation } from "framer-motion";
+import { usePropertiesData } from "../../../api/usePropertiesData";
+import { useWindowDimensions } from "../../../hooks/useWindowDimensions";
 
 export const usePropertiesMap = () => {
   const { isLoading, error, propertiesData } = usePropertiesData();
@@ -23,7 +23,7 @@ export const usePropertiesMap = () => {
   useEffect(() => {
     if (isLoading) return;
 
-    const propertiesCoordinates = propertiesData.map(propertie => ({
+    const propertiesCoordinates = propertiesData.map((propertie) => ({
       id: propertie.id,
       content: propertie.title,
       coordinates: propertie.coordinates,
@@ -32,30 +32,30 @@ export const usePropertiesMap = () => {
     setProperties(propertiesCoordinates);
   }, [propertiesData, isLoading]);
 
-  const toggleMapAnim = async open => {
+  const toggleMapAnim = async (open) => {
     await Promise.all([
       animationControls.closeBtn.start({
-        y: open ? 0 : '-45px',
+        y: open ? 0 : "-45px",
         transition: {
-          type: 'tween',
+          type: "tween",
           duration: 0.5,
-          ease: 'easeOut',
+          ease: "easeOut",
         },
       }),
 
       animationControls.map.start({
         height: open ? `calc(100vh - ${headerHeight}px)` : `${mapHeight}px`,
         transition: {
-          type: 'tween',
+          type: "tween",
           duration: 0.5,
         },
       }),
 
       animationControls.overlay.start({
         opacity: open ? 0 : 1,
-        pointerEvents: open ? 'none' : 'auto',
+        pointerEvents: open ? "none" : "auto",
         transition: {
-          type: 'tween',
+          type: "tween",
           duration: 0.5,
         },
       }),
@@ -63,7 +63,7 @@ export const usePropertiesMap = () => {
       animationControls.title.start({
         opacity: open ? 0 : 1,
         transition: {
-          type: 'tween',
+          type: "tween",
           duration: 0.5,
         },
       }),

@@ -1,10 +1,10 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
-import { HelmetProvider } from 'react-helmet-async';
-import App from './App';
-import EntranceProvider from './context/entranceContext';
-import { QueryClientProvider, queryClient } from './api/reactQueryConfig';
+import React from "react";
+import ReactDOM from "react-dom";
+import { BrowserRouter } from "react-router-dom";
+import { HelmetProvider } from "react-helmet-async";
+import App from "./App";
+import EntranceProvider from "./context/entranceContext";
+import { QueryClientProvider, queryClient } from "./api/reactQueryConfig";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -18,5 +18,5 @@ ReactDOM.render(
       </BrowserRouter>
     </HelmetProvider>
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );

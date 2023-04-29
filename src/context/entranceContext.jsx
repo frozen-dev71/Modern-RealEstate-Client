@@ -1,6 +1,6 @@
 /* eslint-disable react/jsx-no-constructed-context-values */
-import { createContext, useContext, useState } from 'react';
-import PropTypes from 'prop-types';
+import { createContext, useContext, useState } from "react";
+import PropTypes from "prop-types";
 
 // Context
 const EntranceContext = createContext();

@@ -1,29 +1,29 @@
-import styled from 'styled-components';
-import PlaceholderLoading from 'react-placeholder-loading';
-import { respondTo } from '../../../../styles/helpers';
-import { StyledSection, StyledImgWrapper } from '../styles';
+import styled from "styled-components";
+import PlaceholderLoading from "react-placeholder-loading";
+import { respondTo } from "../../../../styles/helpers";
+import { StyledSection, StyledImgWrapper } from "../styles";
 
 const InfoSkeleton = () => {
   return (
     <StyledSection>
-      <StyledFlexSkeleton className='wrapper'>
-        <div className='max-width-500'>
-          <PlaceholderLoading shape='rect' width='100%' height='80' />
+      <StyledFlexSkeleton className="wrapper">
+        <div className="max-width-500">
+          <PlaceholderLoading shape="rect" width="100%" height="80" />
         </div>
 
-        <div className='max-width-250'>
-          <PlaceholderLoading shape='rect' width='80%' height='32' />
+        <div className="max-width-250">
+          <PlaceholderLoading shape="rect" width="80%" height="32" />
         </div>
       </StyledFlexSkeleton>
 
-      <StyledBoxesSkeleton className='wrapper flow-spacing-content rm-spacing-xl'>
-        <PlaceholderLoading shape='rect' width='100%' height='200' />
-        <PlaceholderLoading shape='rect' width='100%' height='200' />
-        <PlaceholderLoading shape='rect' width='100%' height='200' />
+      <StyledBoxesSkeleton className="wrapper flow-spacing-content rm-spacing-xl">
+        <PlaceholderLoading shape="rect" width="100%" height="200" />
+        <PlaceholderLoading shape="rect" width="100%" height="200" />
+        <PlaceholderLoading shape="rect" width="100%" height="200" />
       </StyledBoxesSkeleton>
 
       <StyledImgWrapper>
-        <PlaceholderLoading shape='rect' width='100%' height='100%' />
+        <PlaceholderLoading shape="rect" width="100%" height="100%" />
       </StyledImgWrapper>
     </StyledSection>
   );

@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { fluidValues, respondTo } from '../../../../styles/helpers';
+import styled from "styled-components";
+import { fluidValues, respondTo } from "../../../../styles/helpers";
 
 const StyledContent = styled.div`
   margin-top: ${fluidValues(280, 1200, 24, 40)};

@@ -1,6 +1,6 @@
-import { motion } from 'framer-motion';
-import styled, { css } from 'styled-components';
-import { fluidValues, respondTo } from '../../../styles/helpers';
+import { motion } from "framer-motion";
+import styled, { css } from "styled-components";
+import { fluidValues, respondTo } from "../../../styles/helpers";
 
 const StyledSection = styled.section`
   & > * + * {
@@ -35,7 +35,7 @@ const StyledBox = styled.div`
   ${respondTo.xl`
     padding: 3rem 1rem;
 
-    ${props =>
+    ${(props) =>
       props.borders
         ? css`
             border-right: 1px solid var(--clr-dark);
@@ -45,7 +45,7 @@ const StyledBox = styled.div`
   `}
 
   &::after {
-    content: '';
+    content: "";
     height: 1px;
     width: 100%;
     margin-top: 1rem;
@@ -69,4 +69,10 @@ const StyledImgWrapper = styled.div`
   }
 `;
 
-export { StyledSection, StyledTitleWrapper, StyledFlexWrapper, StyledBox, StyledImgWrapper };
+export {
+  StyledSection,
+  StyledTitleWrapper,
+  StyledFlexWrapper,
+  StyledBox,
+  StyledImgWrapper,
+};

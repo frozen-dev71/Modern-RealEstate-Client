@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { motion } from 'framer-motion';
+import styled from "styled-components";
+import { motion } from "framer-motion";
 
 const StyledButton = styled.button`
   display: flex;
@@ -16,7 +16,7 @@ const StyledButton = styled.button`
     display: block;
     font-size: var(--fs-text-large);
     margin-left: 1rem;
-    color: ${props => (props.white ? 'var(--clr-light)' : 'var(--clr-dark)')};
+    color: ${(props) => (props.white ? "var(--clr-light)" : "var(--clr-dark)")};
   }
 `;
 
@@ -35,12 +35,13 @@ const StyledArrowIcon = styled(motion.svg)`
   fill: none;
 
   path {
-    fill: ${props => (props.white ? 'var(--clr-light)' : 'var(--clr-dark)')};
+    fill: ${(props) => (props.white ? "var(--clr-light)" : "var(--clr-dark)")};
   }
 
   .circlePath {
     fill: none;
-    stroke: ${props => (props.white ? 'var(--clr-light)' : 'var(--clr-dark)')};
+    stroke: ${(props) =>
+      props.white ? "var(--clr-light)" : "var(--clr-dark)"};
     stroke-width: 2;
   }
 `;

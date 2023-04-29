@@ -1,6 +1,6 @@
-import styled from 'styled-components';
-import { motion } from 'framer-motion';
-import { AiOutlineClose } from 'react-icons/ai';
+import styled from "styled-components";
+import { motion } from "framer-motion";
+import { AiOutlineClose } from "react-icons/ai";
 
 const StyledWrapper = styled(motion.div)`
   position: fixed;
@@ -98,7 +98,7 @@ const StyledImgWrapper = styled.div`
   z-index: 55;
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     width: 100%;

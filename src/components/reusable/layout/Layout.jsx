@@ -1,7 +1,7 @@
-import PropTypes from 'prop-types';
-import Header from '../../isolated/header/Header';
-import Footer from '../../isolated/footer/Footer';
-import Animations from '../../isolated/animations/Animations';
+import PropTypes from "prop-types";
+import Header from "../../isolated/header/Header";
+import Footer from "../../isolated/footer/Footer";
+import Animations from "../../isolated/animations/Animations";
 
 const Layout = ({ children, isHeaderLight }) => {
   return (
@@ -10,7 +10,7 @@ const Layout = ({ children, isHeaderLight }) => {
 
       {children}
 
-      <Footer spacing='footer-spacing-top footer-spacing-bottom' />
+      <Footer spacing="footer-spacing-top footer-spacing-bottom" />
 
       {/* Out of document flow */}
       <Animations />

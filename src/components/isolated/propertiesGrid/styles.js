@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { fluidValues, respondTo } from '../../../styles/helpers';
+import styled from "styled-components";
+import { fluidValues, respondTo } from "../../../styles/helpers";
 
 const StyledGrid = styled.section`
   & > * + * {

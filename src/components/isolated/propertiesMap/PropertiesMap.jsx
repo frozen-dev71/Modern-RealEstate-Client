@@ -1,26 +1,37 @@
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
-import PlaceholderLoading from 'react-placeholder-loading';
-import Error from '../../reusable/error/Error';
-import { StyledH1 } from '../../../styles/reusable/typography';
-import { StyledMapWrapper, StyledOverlay, StyledTitleWrapper, StyledCloseBtn } from './styles';
-import { usePropertiesMap } from './usePropertiesMap';
-import { attributionText, icon, apiKey } from './utils';
+import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import PlaceholderLoading from "react-placeholder-loading";
+import Error from "../../reusable/error/Error";
+import { StyledH1 } from "../../../styles/reusable/typography";
+import {
+  StyledMapWrapper,
+  StyledOverlay,
+  StyledTitleWrapper,
+  StyledCloseBtn,
+} from "./styles";
+import { usePropertiesMap } from "./usePropertiesMap";
+import { attributionText, icon, apiKey } from "./utils";
 
 const PropertiesMap = () => {
-  const { isLoading, error, properties, animationControls, toggleMapAnim, zoomLevel } =
-    usePropertiesMap();
+  const {
+    isLoading,
+    error,
+    properties,
+    animationControls,
+    toggleMapAnim,
+    zoomLevel,
+  } = usePropertiesMap();
 
   if (isLoading) {
     return (
       <StyledMapWrapper>
-        <PlaceholderLoading shape='rect' width='100%' height='100%' />
+        <PlaceholderLoading shape="rect" width="100%" height="100%" />
       </StyledMapWrapper>
     );
   }
 
   if (error) {
     return (
-      <StyledMapWrapper className='wrapper'>
+      <StyledMapWrapper className="wrapper">
         <Error />
       </StyledMapWrapper>
     );
@@ -37,26 +48,34 @@ const PropertiesMap = () => {
       >
         <TileLayer attribution={attributionText} url={apiKey} />
 
-        {properties.map(propertie => (
+        {properties.map((propertie) => (
           <Marker
             key={propertie.id}
             position={propertie.coordinates}
             icon={icon}
-            alt='icono marcador'
+            alt="icono marcador"
           >
-            <Popup style={{ fontFamily: 'var(--font)' }}>{propertie.content}</Popup>
+            <Popup style={{ fontFamily: "var(--font)" }}>
+              {propertie.content}
+            </Popup>
           </Marker>
         ))}
       </MapContainer>
 
-      <StyledOverlay animate={animationControls.overlay} onClick={() => toggleMapAnim(true)}>
-        <StyledTitleWrapper className='wrapper' animate={animationControls.title}>
+      <StyledOverlay
+        animate={animationControls.overlay}
+        onClick={() => toggleMapAnim(true)}
+      >
+        <StyledTitleWrapper
+          className="wrapper"
+          animate={animationControls.title}
+        >
           <StyledH1 light>Properties</StyledH1>
         </StyledTitleWrapper>
       </StyledOverlay>
 
       <StyledCloseBtn
-        initial={{ y: '-45px' }}
+        initial={{ y: "-45px" }}
         animate={animationControls.closeBtn}
         onClick={() => toggleMapAnim(false)}
       >

@@ -1,23 +1,23 @@
-import { motion } from 'framer-motion';
-import styled from 'styled-components';
-import bgImage from '../../assets/images/bg.jpeg';
-import { StyledH1 } from '../../styles/reusable/typography';
-import Button from '../../components/reusable/btn/Button';
-import Slider from '../../components/isolated/slider/Slider';
-import { useEntranceContext } from '../../context/entranceContext';
+import { motion } from "framer-motion";
+import styled from "styled-components";
+import bgImage from "../../assets/images/bg.jpeg";
+import { StyledH1 } from "../../styles/reusable/typography";
+import Button from "../../components/reusable/btn/Button";
+import Slider from "../../components/isolated/slider/Slider";
+import { useEntranceContext } from "../../context/entranceContext";
 
 const Hero = () => {
   const { isEntranceActive } = useEntranceContext();
   const titleAnimations = {
-    from: hideValue => ({
+    from: (hideValue) => ({
       y: hideValue,
     }),
-    to: delay => ({
+    to: (delay) => ({
       y: 0,
       transition: {
-        type: 'tween',
+        type: "tween",
         duration: 0.7,
-        ease: 'easeOut',
+        ease: "easeOut",
         delay,
       },
     }),
@@ -25,36 +25,37 @@ const Hero = () => {
 
   return (
     <StyledBgImgWrapper>
-      <StyledContent className='wrapper flow-spacing-content'>
-        <motion.div initial={{ overflow: 'hidden' }}>
+      <StyledContent className="wrapper flow-spacing-content">
+        <motion.div initial={{ overflow: "hidden" }}>
           <StyledH1
             light
-            className='max-width-500'
+            className="max-width-500"
             initial={() => titleAnimations.from(200)}
             animate={() => titleAnimations.to(isEntranceActive ? 4.9 : 0.8)}
           >
-           Innovation and Technology
+            Innovation and Technology
           </StyledH1>
         </motion.div>
 
-        <motion.div initial={{ overflow: 'hidden' }}>
+        <motion.div initial={{ overflow: "hidden" }}>
           <motion.p
-            className='text-white max-width-500'
+            className="text-white max-width-500"
             initial={() => titleAnimations.from(400)}
             animate={() => titleAnimations.to(isEntranceActive ? 4.8 : 0.7)}
           >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisi, molestie et egestas
-            rhoncus volutpat adipiscing. Dui in varius elit orci et luctus aliquam maecenas. Amet,
-            aliquam et aliquet condimentum quis enim.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nisi,
+            molestie et egestas rhoncus volutpat adipiscing. Dui in varius elit
+            orci et luctus aliquam maecenas. Amet, aliquam et aliquet
+            condimentum quis enim.
           </motion.p>
         </motion.div>
 
-        <motion.div initial={{ overflow: 'hidden' }}>
+        <motion.div initial={{ overflow: "hidden" }}>
           <motion.div
             initial={() => titleAnimations.from(300)}
             animate={() => titleAnimations.to(isEntranceActive ? 4.7 : 0.6)}
           >
-            <Button white path='/about' text='Discover More' />
+            <Button white path="/about" text="Discover More" />
           </motion.div>
         </motion.div>
       </StyledContent>
@@ -74,7 +75,7 @@ const StyledBgImgWrapper = styled.section`
   min-height: 100vh;
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     width: 100%;

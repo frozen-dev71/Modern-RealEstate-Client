@@ -1,6 +1,6 @@
-import styled from 'styled-components';
-import { Link } from 'react-router-dom';
-import { fluidValues, respondTo } from '../../../styles/helpers';
+import styled from "styled-components";
+import { Link } from "react-router-dom";
+import { fluidValues, respondTo } from "../../../styles/helpers";
 
 const StyledWrapper = styled.article`
   ${respondTo.xl`
@@ -48,7 +48,7 @@ const StyledImgWrapper = styled.div`
 
   // Overlay
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;

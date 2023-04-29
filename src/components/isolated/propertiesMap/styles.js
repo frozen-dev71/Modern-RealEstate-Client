@@ -1,6 +1,6 @@
-import styled from 'styled-components';
-import { motion } from 'framer-motion';
-import { fluidValues } from '../../../styles/helpers';
+import styled from "styled-components";
+import { motion } from "framer-motion";
+import { fluidValues } from "../../../styles/helpers";
 
 const StyledMapWrapper = styled(motion.div)`
   height: ${fluidValues(280, 1000, 200, 350)}; // 200px - 350px

@@ -1,13 +1,16 @@
-import Head from '../../components/reusable/head/Head';
-import Layout from '../../components/reusable/layout/Layout';
-import Navigation from '../../components/reusable/navigation/Navigation';
-import Content from '../../sections/about/content/Content';
-import { homeBox, propertiesBox } from '../../utils/navigationData';
+import Head from "../../components/reusable/head/Head";
+import Layout from "../../components/reusable/layout/Layout";
+import Navigation from "../../components/reusable/navigation/Navigation";
+import Content from "../../sections/about/content/Content";
+import { homeBox, propertiesBox } from "../../utils/navigationData";
 
 const About = () => {
   return (
     <>
-      <Head title='About' description='Informations about Moderne Real-Estate' />
+      <Head
+        title="About"
+        description="Informations about Moderne Real-Estate"
+      />
 
       <Layout isHeaderLight={false}>
         <main>
