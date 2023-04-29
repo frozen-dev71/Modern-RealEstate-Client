@@ -11,7 +11,7 @@ const aboutBox = {
 
 const propertiesBox = {
   title: 'Properties',
-  text: 'Elegi tu propiedad',
+  text: 'Choose Property',
   imgSrc: propertiesImg,
   pathTo: '/properties',
 };
