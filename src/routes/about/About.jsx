@@ -7,7 +7,7 @@ import { homeBox, propertiesBox } from '../../utils/navigationData';
 const About = () => {
   return (
     <>
-      <Head title='About-Moderne' description='Informations about Moderne Real-Estate' />
+      <Head title='About' description='Informations about Moderne Real-Estate' />
 
       <Layout isHeaderLight={false}>
         <main>
