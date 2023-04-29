@@ -6,7 +6,7 @@ import Head from '../../components/reusable/head/Head';
 import Navigation from '../../components/reusable/navigation/Navigation';
 import { propertiesBox, aboutBox } from '../../utils/navigationData';
 
-const SinglePropertie = () => {
+const SingleProperty = () => {
   const { id } = useParams();
 
   return (

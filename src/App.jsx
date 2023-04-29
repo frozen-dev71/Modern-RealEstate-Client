@@ -1,35 +1,45 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useEffect } from 'react';
+import { Routes, Route, useLocation } from 'react-router-dom';
+import { AnimatePresence } from 'framer-motion';
+import useScrollbarSize from 'react-scrollbar-size';
+import Home from './routes/home/Home';
+import About from './routes/about/About';
+import Properties from './routes/properties/Properties';
+import SingleProperty from './routes/singlePropertie/SingleProperty';
+import NotFound from './routes/404/NotFound';
+import GlobalStyles from './styles/globalStyles';
+import ScrollToTop from './components/isolated/scrollToTop/ScrollToTop';
 
 function App() {
-  const [count, setCount] = useState(0)
+  // Get scrollbarWidth of current browser
+  const { width } = useScrollbarSize();
+  const location = useLocation();
+
+  // set css variable with browser scrollbar width & calculate space
+  useEffect(() => {
+    document.documentElement.style.setProperty(
+      '--scrollbar-width',
+      `calc(${width}px - (100vw - 100%))`
+    );
+  }, [width]);
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <GlobalStyles />
+
+      <ScrollToTop>
+        <AnimatePresence exitBeforeEnter>
+          <Routes location={location} key={location.pathname}>
+            <Route path='/' element={<Home />} />
+            <Route path='/about' element={<About />} />
+            <Route path='/properties' element={<Properties />} />
+            <Route path='/properties/:id' element={<SingleProperty />} />
+            <Route path='*' element={<NotFound />} />
+          </Routes>
+        </AnimatePresence>
+      </ScrollToTop>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
