@@ -18,8 +18,9 @@ const Content = () => {
 
       <StyledTextWrapper>
         <StyledH3 as="p">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et
-          pellentesque tempor semper odio morbi vitae eget luctus metus.
+        We want to win at what we do, and we do all we can to help our customers,
+         agents and employees build wealth. We love to work with people who are passionate
+          about working hard and also giving back to their communities in a big way.
         </StyledH3>
       </StyledTextWrapper>
     </section>
