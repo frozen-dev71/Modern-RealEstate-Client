@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
-import { FaFacebookF } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
 import { FiMail } from "react-icons/fi";
 import { respondTo } from "../../../styles/helpers";
 
@@ -46,7 +46,7 @@ const StyledWrapper = styled.div`
     }
   }
 
-  .facebook-icon,
+  .instagram-icon,
   .mail-icon,
   .pathname,
   .contact-link {
@@ -56,7 +56,7 @@ const StyledWrapper = styled.div`
   ${respondTo.lg`
       display: grid;
       grid-template-columns: repeat(3 , max-content) 1fr repeat(4, max-content); 
-      grid-template-areas: 'hamburger logo pathname . properties facebook mail contact';
+      grid-template-areas: 'hamburger logo pathname . properties instagram mail contact';
       align-items: center;
 
       .logo {
@@ -76,9 +76,9 @@ const StyledWrapper = styled.div`
         p {margin-left : 1rem;}
       }
 
-      .facebook-icon {
+      .instagram-icon {
         display: inline-block;
-        grid-area: facebook;
+        grid-area: instagram;
         margin-right: 2.5rem;
       }
 
@@ -101,7 +101,7 @@ const StyledWrapper = styled.div`
   `}
 `;
 
-const StyledFacebookIcon = styled(FaFacebookF)`
+const StyledInstagramIcon = styled(FaInstagram)`
   width: 1.5rem;
   height: 1.5rem;
   margin-top: 0.5rem;
@@ -124,7 +124,7 @@ const StyledBg = styled(motion.div)`
 export {
   StyledHeader,
   StyledWrapper,
-  StyledFacebookIcon,
+  StyledInstagramIcon,
   StyledMailIcon,
   StyledBg,
 };

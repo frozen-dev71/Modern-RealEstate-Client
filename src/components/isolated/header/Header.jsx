@@ -11,7 +11,7 @@ import { useHeader } from "./useHeader";
 import {
   StyledHeader,
   StyledWrapper,
-  StyledFacebookIcon,
+  StyledInstagramIcon,
   StyledMailIcon,
   StyledBg,
 } from "./styles";
@@ -72,14 +72,14 @@ const Header = ({ light }) => {
         </div>
 
         <a
-          href="https://www.facebook.com/"
+          href="https://www.instagram.com/"
           target="_blank"
-          className={`moveElementForward-10 header-link facebook-icon ${
+          className={`moveElementForward-10 header-link instagram-icon ${
             isTextWhite ? "text-white" : "text-dark"
           }`}
           rel="noreferrer"
         >
-          <StyledFacebookIcon />
+          <StyledInstagramIcon />
         </a>
 
         <a
