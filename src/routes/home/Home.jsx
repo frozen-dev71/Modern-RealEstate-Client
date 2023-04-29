@@ -8,7 +8,7 @@ import { propertiesBox, aboutBox } from '../../utils/navigationData';
 const Home = () => {
   return (
     <>
-      <Head title='Home' description='Pagina de Inicio - Agencia Moderne' />
+      <Head title='Home' description='Home - Moderne-Real-Estate' />
 
       <Layout isHeaderLight>
         <main className='flow-spacing'>

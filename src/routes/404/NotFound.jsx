@@ -5,7 +5,7 @@ import Content from '../../sections/404/Content';
 const NotFound = () => {
   return (
     <>
-      <Head title='Error' description='Pagina de Error' />
+      <Head title='Error' description='Error Page' />
 
       <Layout isHeaderLight={false}>
         <main>
