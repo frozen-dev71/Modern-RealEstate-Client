@@ -42,7 +42,7 @@ const MobileMenu = () => {
             className={linkRoute =>
               linkRoute.isActive && !location.hash ? 'mobile-link active-link' : 'mobile-link'
             }
-            to='/propiedades'
+            to='/properties'
           >
             Properties
           </NavLink>

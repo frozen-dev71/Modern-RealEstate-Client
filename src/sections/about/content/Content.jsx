@@ -32,7 +32,7 @@ const Content = () => {
               animate={() => contentAnimations.to(isEntranceActive ? 4.8 : 0.6)}
               className='sub-title'
             >
-             How Moderne Real-Estate was born
+             How Moderne born
             </StyledSubText>
           </motion.div>
 

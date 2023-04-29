@@ -91,7 +91,7 @@ const Header = ({ light }) => {
         </a>
 
         <Link
-          to='/propiedades'
+          to='/properties'
           className={`moveElementForward-10 header-link properties-link ${
             isTextWhite ? 'text-white' : 'text-dark'
           }`}

@@ -58,17 +58,17 @@ const Info = () => {
           className='wrapper flow-spacing-content rm-spacing-xl'
         >
           <StyledBox>
-            <p>Direccion</p>
+            <p>Direction</p>
             <StyledInfo>{singlePropertie[0].direction}</StyledInfo>
           </StyledBox>
 
           <StyledBox borders>
-            <p>En venta desde</p>
+            <p>Year</p>
             <StyledInfo>{singlePropertie[0].year}</StyledInfo>
           </StyledBox>
 
           <StyledBox>
-            <p>Habitaciones</p>
+            <p>Rooms</p>
             <StyledInfo>{singlePropertie[0].rooms}</StyledInfo>
           </StyledBox>
         </StyledFlexWrapper>

@@ -117,7 +117,7 @@ const Slider = () => {
               })
             }
           >
-            <span>Propiedades</span>
+            <span>Properties</span>
 
             <StyledArrowWrapper animate={arrowControls}>
               <img src={arrowSvg} alt='flecha' />

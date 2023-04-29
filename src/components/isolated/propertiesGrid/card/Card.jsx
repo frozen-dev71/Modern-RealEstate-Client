@@ -10,7 +10,7 @@ const Card = ({ data, index }) => {
   const checkStatusAndRenderName = status => {
     const statusObj = {
       'on sale': 'On Sale',
-      sold: 'Vendida',
+      sold: 'Sold',
       'coming soon': 'Soon',
     };
 
@@ -26,7 +26,7 @@ const Card = ({ data, index }) => {
       exit={{ opacity: 0, transition: { duration: 0.3, ease: 'easeOut' } }}
     >
       <StyledImgWrapper>
-        <Link to={`/propiedades/${index + 1}`}>
+        <Link to={`/properties/${index + 1}`}>
           <motion.img
             animate={imgControls}
             src={img}

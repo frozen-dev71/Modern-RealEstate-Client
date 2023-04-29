@@ -172,7 +172,7 @@ const DesktopMenu = ({ setIsMenuOpen }) => {
           ))}
         </div>
 
-        <p className='text-white'>&copy; ${new Date().getFullYear()} Moderne Real-Estate</p>
+        <p className='text-white'>&copy; {new Date().getFullYear()} Moderne Real-Estate</p>
       </StyledProperties>
 
       <StyledImgWrapper>

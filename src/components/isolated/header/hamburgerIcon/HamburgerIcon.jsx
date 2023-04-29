@@ -5,7 +5,7 @@ const HamburgerIcon = ({ isMenuOpen, setIsMenuOpen, light }) => {
   return (
     <StyledBtn
       type='button'
-      aria-label={isMenuOpen ? 'Cerrar menu' : 'Abrir menu'}
+      aria-label={isMenuOpen ? 'Close menu' : 'Open menu'}
       onClick={() => setIsMenuOpen(prev => !prev)}
     >
       <StyledIconWrapper isLight={isMenuOpen || light}>
@@ -26,7 +26,7 @@ const HamburgerIcon = ({ isMenuOpen, setIsMenuOpen, light }) => {
 };
 
 // Proptypes
-HamburguerIcon.propTypes = {
+HamburgerIcon.propTypes = {
   isMenuOpen: PropTypes.bool.isRequired,
   setIsMenuOpen: PropTypes.func.isRequired,
   light: PropTypes.bool.isRequired,

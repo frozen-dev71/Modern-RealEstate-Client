@@ -138,7 +138,7 @@ export const useHeader = light => {
 
       // Dynamic routes
       if (id) {
-        setRenderPathName(`Propiedades`);
+        setRenderPathName(`Properties`);
         return;
       }
 

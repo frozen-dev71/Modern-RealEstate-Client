@@ -51,7 +51,7 @@ const PropertiesMap = () => {
 
       <StyledOverlay animate={animationControls.overlay} onClick={() => toggleMapAnim(true)}>
         <StyledTitleWrapper className='wrapper' animate={animationControls.title}>
-          <StyledH1 light>Propiedades</StyledH1>
+          <StyledH1 light>Properties</StyledH1>
         </StyledTitleWrapper>
       </StyledOverlay>
 
@@ -60,7 +60,7 @@ const PropertiesMap = () => {
         animate={animationControls.closeBtn}
         onClick={() => toggleMapAnim(false)}
       >
-        Cerrar
+        Close
       </StyledCloseBtn>
     </StyledMapWrapper>
   );

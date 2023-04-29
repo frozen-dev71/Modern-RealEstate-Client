@@ -34,7 +34,7 @@ const Footer = ({ spacing }) => {
         </StyledContent>
 
         <StyledFlexWrapper gridArea='copyright'>
-          <p>&copy; ${new Date().getFullYear()} Moderne Real-Estate - All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Moderne Real-Estate - All rights reserved.</p>
           <StyledScrollButton onClick={toTop}>Go Top</StyledScrollButton>
         </StyledFlexWrapper>
       </StyledGrid>
