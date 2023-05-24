@@ -84,11 +84,9 @@ Moderne is released under the MIT License. Please refer to the `LICENSE` file fo
 
 ## Links
 
-Project Repository: [moderne](https://github.com/berkbeleli/Modern-RealEstate-Client)
+Project Repository: [moderne](https://github.com/nightFuryman/Modern-RealEstate-Client)
 
-Project Website: [Moderne](moderne.onrender.com/)
-
-Portfolio: [berkbeleli-portfolio](https://berkbeleli.onrender.com/)
+Portfolio: [berkbeleli-portfolio](https://portfolio-25c95.web.app/)
 
   
 ## ScreenShots
